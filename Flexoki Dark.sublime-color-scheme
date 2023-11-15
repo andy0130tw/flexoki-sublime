@@ -37,10 +37,10 @@
     },
     "globals":
     {
-        "background": "var(bg-1)",
+        "background": "color(var(bg-1) blend(var(blue) 96%))",
         "foreground": "var(tx-1)",
-        "line_highlight": "var(bg-2)",
-        "gutter": "var(bg-1)",
+        "line_highlight": "color(var(bg-2) alpha(.5) blend(var(blue) 92%))",
+        "gutter": "color(var(bg-1) alpha(0.5))",
         "gutter_foreground": "var(tx-3)",
         "gutter_foreground_highlight": "var(tx-2)",
 
@@ -52,8 +52,10 @@
         "misspelling": "var(red)",
 
         "highlight": "var(tx-3)",
-        "find_highlight": "var(bg-2)",
-        "find_highlight_foreground": "var(primary)",
+        "find_highlight": "var(base-200)",
+        "find_highlight_foreground": "var(bg-2)",
+        "scroll_highlight": "var(base-500)",
+        "scroll_selected_highlight": "var(yellow)",
 
         "accent": "var(blue)",
         "fold_marker": "var(yellow)",
@@ -155,7 +157,7 @@
         {
             "name": "Storage modifier",
             "scope": "storage.modifier",
-            "foreground": "var(tx-1)"
+            "foreground": "var(purple)"
         },
         {
             "name": "Class",
@@ -556,6 +558,11 @@
         {
             "name": "JavaScript Variables",
             "scope": "variable.other.readwrite.js, variable.other.object.js, variable.other.constant.js",
+            "foreground": "var(tx-1)"
+        },
+        {
+            "name": "YAML Key",
+            "scope": "entity.name.tag.yaml",
             "foreground": "var(tx-1)"
         },
 
